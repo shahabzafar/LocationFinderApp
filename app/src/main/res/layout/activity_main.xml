@@ -1,0 +1,137 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4DBDB"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Location Finder"
+        android:textColor="#2c3e50"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Address Input Field -->
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:hint="Enter Location"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888" />
+
+    <!-- Latitude Input Field -->
+    <EditText
+        android:id="@+id/Latitude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:hint="Enter Latitude"
+        android:inputType="numberDecimal|numberSigned"
+        android:digits="0123456789.-"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888" />
+
+    <!-- Longitude Input Field -->
+    <EditText
+        android:id="@+id/Longitude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:hint="Enter Longitude"
+        android:inputType="numberDecimal|numberSigned"
+        android:digits="0123456789.-"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Add"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Add Location"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Query"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#2196F3"
+            android:text="Query Location"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Delete"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#F44336"
+            android:text="Delete Location"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Update"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FF9800"
+            android:text="Update Location"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Result Display -->
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Results will appear here"
+        android:textColor="#2c3e50"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Clear All Fields-->
+    <Button
+        android:id="@+id/ClearAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#9C27B0"
+        android:padding="10dp"
+        android:text="Clear All"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+</LinearLayout>
